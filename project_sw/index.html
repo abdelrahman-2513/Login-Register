@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Automatic Vending</title>
+    <link rel="icon" href="./images/Add a heading.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <video autoplay muted loop id="myVideo">
+            <source src="./images/Add a heading.mp4" type="video/mp4">
+        </video>
+        <h3>Automatic Vending Machine System</h3>
+    </header>
+    <div class="frame">
+
+
+        <div class="box">
+            <div class="header">
+
+                <button type="button" class="login" href="#" onclick="loginn()">LogIn</button>
+                <button type="button" class="Register" href="#" onclick="registerition()">Register</button>
+            </div>
+            <div class="main_box">
+                <form id="loginn" class="loginnn">
+                    <label> Email or ID</label>
+                    <input title="Please enter your emial" class="email" type="email" placeholder="abcdefg123@email.com"
+                        required>
+                    <label>Password</label>
+                    <input title="Please enter your pasword" class="password" type="password" required
+                        placeholder="Password">
+                    <div class="check_box">
+                        <input title="checkbox" class="checkbox" type="checkbox" required>
+                        <h4>Remember Password.</h4>
+                    </div>
+                    <a href="#">Forgot your Password?</a>
+                    <button type="submit" class="Login2">Login</button>
+                    <div class="footer">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </form>
+                <form id="registerition" class="registeritionn">
+                    <label> Email </label>
+                    <input title="Please enter your emial" class="email" type="email" placeholder="abcdefg123@email.com"
+                        required>
+                    <label>Password</label>
+                    <input title="Please enter your pasword" class="password" type="password" required
+                        placeholder="Password">
+                    <label>Confrim Password</label>
+                    <input title="Please enter your pasword" class="password" type="password" required
+                        placeholder="Password">
+                    <label>Address</label>
+                    <input type="text" class="adress" required title="adress">
+                    <div class="check_box">
+                        <input title="checkbox" class="checkbox" type="checkbox" required>
+                        <h4>agree AVS conditions of use and privacy.</h4>
+                    </div>
+
+                    <button type="submit" class="Register2">Register</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("loginn");
+        var y = document.getElementById("registerition");
+        function registerition() {
+            x.style.left = "-450px";
+            y.style.left = "-425px";
+        }
+        function loginn() {
+            x.style.left = "0px";
+            y.style.left = "425px";
+        }
+
+    </script>
+
+</body>
+
+</html>
